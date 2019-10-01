@@ -2,13 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Todo List</title>
+    <title>Crystals Collector!</title>
     <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script defer src="assets/javascript/all.js"></script>
     <script type="text/javascript" src="assets/javascript/lib/jquery-3.4.1.min.js"></script>
 </head>
 <body>
+<h1>Crystals Collector</h1>
+<div class="container">
+    <p>You will be given a random number at the start of the game.</p>
+    <p>There are four crystals below. By clicking on a crystal, you will
+        add a specific amount of points to your total score.
+    </p>
+    <p>You win the game by matching your total score to the random number.
+        You lose the game if your total score goes above the random number.
+    </p>
+    <p>The value of each crystal is hidden from you until you click on it.</p>
+    <p>Each time when the game starts, the game will change the value of each crystal.</p>
+</div>
+
+<div id="random-number"></div>
+<p>Wins: <div id="wins">0</div></p>
+<p>Losses: <div id="losses">0</div></p>
+
+<img id="1" class="number" src="assets/images/emerald.png"></img>
+<img id="2" class="number" src="assets/images/ruby.png"></img>
+<img id="3" class="number" src="assets/images/sapphire.png"></img>
+<img id="4" class="number" src="assets/images/topaz.png"></img>
+
+<p>Your total score is <div id="user-score">0</div></p>
 
 <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
